@@ -5,9 +5,6 @@ Various helpfull gdb commands.
 I highly recommand using [gdb-dashboard](https://github.com/cyrus-and/gdb-dashboard)
 as opposed to the default `gdb -tui` mode.
 
-## Talks on the Subject
-* [Greg Law](https://www.youtube.com/watch?v=-n9Fkq1e6sg)
-
 ## Normal Commands
 * backtrace ('ba') full -- Complete backtrace with local variables
 * up, down, frame -- Move through frames
@@ -25,9 +22,9 @@ as opposed to the default `gdb -tui` mode.
 * print -- Print value of expression
 * whatis -- Print data type of expression
 * record --  Record a log of the process execution to replay it later
-[(more info)](https://sourceware.org/gdb/onlinedocs/gdb/Process-Record-and-Replay.html)
+* [(more info)](https://sourceware.org/gdb/onlinedocs/gdb/Process-Record-and-Replay.html)
 ## Reversed Direction (~50k times slower execution)
-[(more info)](https://sourceware.org/gdb/onlinedocs/gdb/Reverse-Execution.html#Reverse-Execution)
+* [talk on the subject](https://youtu.be/-n9Fkq1e6sg?t=2266)
 * reverse-continue ('rc') -- Continue program being debugged but run it in reverse
 * reverse-finish -- Execute backward until just before the selected stack frame is called
 * reverse-next ('rn') -- Step program backward, proceeding through subroutine calls.
@@ -35,6 +32,7 @@ as opposed to the default `gdb -tui` mode.
 * reverse-step ('rs') -- Step program backward until it reaches the beginning of a previous source line
 * reverse-stepi -- Step backward exactly one instruction
 * set exec-direction (forward/reverse) -- Set direction of execution.
+* [more info](https://sourceware.org/gdb/onlinedocs/gdb/Reverse-Execution.html#Reverse-Execution)
 ## Conversion
 * p/d 0x10 -- gives decimal equivalent of 0x10
 * p/t 0x10 -- binary equivalent of 0x10
