@@ -5,6 +5,9 @@ Various helpfull gdb commands.
 I highly recommand using [gdb-dashboard](https://github.com/cyrus-and/gdb-dashboard)
 as opposed to the default `gdb -tui` mode.
 
+## Talks on the Subject
+* [Greg Law](https://www.youtube.com/watch?v=-n9Fkq1e6sg)
+
 ## Normal Commands
 * backtrace ('ba') full -- Complete backtrace with local variables
 * up, down, frame -- Move through frames
