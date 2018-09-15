@@ -23,7 +23,7 @@ as opposed to the default `gdb -tui` mode.
 * whatis -- Print data type of expression
 * record --  Record a log of the process execution to replay it later
 * [(more info)](https://sourceware.org/gdb/onlinedocs/gdb/Process-Record-and-Replay.html)
-## Reversed Direction (~50k times slower execution)
+## Reversed Direction (warning : significant slowdown)
 * [talk on the subject](https://youtu.be/-n9Fkq1e6sg?t=2266)
 * reverse-continue ('rc') -- Continue program being debugged but run it in reverse
 * reverse-finish -- Execute backward until just before the selected stack frame is called
