@@ -10,6 +10,13 @@ I recommand using [rr](https://github.com/mozilla/rr) since it allows for faster
 native gdb (~2times slowdown vs ~50ktimes). This is especially usefull when you want to use
 reverse direction.
 
+## Debugging Rust
+```
+# setup breakpoint when panic is invoked
+b rust_panic
+b rust_begin_unwind
+```
+
 ## Normal Commands
 * backtrace ('ba') full -- Complete backtrace with local variables
 * up, down, frame -- Move through frames
