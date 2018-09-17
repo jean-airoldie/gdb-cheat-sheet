@@ -11,6 +11,8 @@ native gdb (~2times slowdown vs ~50ktimes). This is especially usefull when you 
 reverse direction.
 
 ## Debugging Rust
+I should look into integratin [this](https://github.com/rust-lang/rust/blob/master/src/etc/rust-gdb)
+into rr. Also add the rust stdlib if source is downloaded.
 ```
 # setup breakpoint when panic is invoked
 b rust_panic
