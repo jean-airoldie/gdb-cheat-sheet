@@ -40,6 +40,7 @@ b rust_begin_unwind
 * [(more info)](https://sourceware.org/gdb/onlinedocs/gdb/Process-Record-and-Replay.html)
 ## Reversed Direction
 * [talk on the subject](https://youtu.be/-n9Fkq1e6sg?t=2266)
+* [example with watchpoint](https://github.com/mozilla/rr/wiki/Usage#reverse-execution)
 * reverse-continue ('rc') -- Continue program being debugged but run it in reverse
 * reverse-finish -- Execute backward until just before the selected stack frame is called
 * reverse-next ('rn') -- Step program backward, proceeding through subroutine calls.
