@@ -2,8 +2,11 @@
 Various helpfull gdb commands.
 
 ## Terminal Gui
-I highly recommand using [gdb-dashboard](https://github.com/cyrus-and/gdb-dashboard)
-as opposed to the default `gdb -tui` mode.
+I recommand using my [own config file](https://github.com/jean-airoldie/dotfiles/blob/master/.gdbinit)
+which integrates [gdb-dashboard](https://github.com/cyrus-and/gdb-dashboard)
+which is vastly superior to the default `gdb -tui` mode. Furthermore,
+I added autoload of the rust python pretty print module and add the rust stdlib if
+source is present (install via `rustup component add rust-src`).
 
 ## RR
 I recommand using [rr](https://github.com/mozilla/rr) since it allows for faster recording than
@@ -11,8 +14,6 @@ native gdb (~2times slowdown vs ~50ktimes). This is especially usefull when you 
 reverse direction.
 
 ## Debugging Rust
-I should look into integratin [this](https://github.com/rust-lang/rust/blob/master/src/etc/rust-gdb)
-into rr. Also add the rust stdlib if source is downloaded.
 ```
 # setup breakpoint when panic is invoked
 b rust_panic
