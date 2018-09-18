@@ -18,6 +18,8 @@ reverse direction.
 # setup breakpoint when panic is invoked
 b rust_panic
 b rust_begin_unwind
+#
+b std::panicking::rust_panic_with_hook
 ```
 
 ## Normal Commands
