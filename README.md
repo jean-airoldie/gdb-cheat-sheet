@@ -18,8 +18,10 @@ reverse direction.
 # setup breakpoint when panic is invoked
 b rust_panic
 b rust_begin_unwind
-#
+# alternative breakpoint for panic
 b std::panicking::rust_panic_with_hook
+# print value of element of vec (which is a Vec)
+p vec.buf.ptr.pointer.__0[0]
 ```
 
 ## Normal Commands
